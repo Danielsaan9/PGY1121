@@ -2,7 +2,15 @@
 print("Datos personales")
 print("- - - - - - - - -")
 vNom = input("Ingrese su nombre : ")
-vEdad = input("Ingrese su edad : ")
+while True:
+
+    try :
+
+        vEdad = int(input("Ingrese su edad : "))
+        break
+    except:
+        print("Valor no corresponde")   
+
 print(f"Su nombre es : {vNom}")
 print(f"Su edad es : {vEdad}")
-print("FIN PROGRAMA")
+
